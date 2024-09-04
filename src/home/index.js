@@ -12,10 +12,10 @@ function Home() {
                     Harry Lonsdale
                 </div>
                 <div className='Socials'>
-                    <a href='https://linkedin.com/in/harry-lonsdale/' style={{ color: "#FFFFFF" }}>
+                    <a href='https://linkedin.com/in/harry-lonsdale/' style={{ color: "#FFF" }} target="_blank">
                         <LinkedinOutlined style={{ fontSize: '30px' }} />
                     </a>
-                    <a href='https://instagram.com/harry.lons/' style={{ color: "#FFFFFF" }}>
+                    <a href='https://instagram.com/harry.lons/' style={{ color: "#FFF" }} target="_blank">
                         <InstagramOutlined style={{ fontSize: '30px' }} />
                     </a>
                 </div>

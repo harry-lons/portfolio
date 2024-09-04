@@ -70,33 +70,35 @@ $q: #EEDF7A;
         width: 90%;
 
         .Item {
-        width: 42%;
-        margin-top: 15px;
-        background-color: #151313;
-        border-radius: 2px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+          width: 100%;
+          margin-top: 15px;
+          background-color: #151313;
+          border-radius: 2px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 
-        .Welcome {
-          color: #FFF;
-          font-family: Calibri, sans-serif;
-          font-size: 26px;
-          text-align: left;
-          margin-left: 5%;
-          margin-top: 20px;
-        }
+          .Welcome {
+            color: #FFF;
+            font-family: Calibri, sans-serif;
+            font-size: 26px;
+            text-align: left;
+            margin-left: 5%;
+            margin-top: 20px;
+          }
 
-        .Sub-text {
-          color: #FFF;
-          font-family: Calibri, sans-serif;
-          font-size: 18px;
-          text-align: left;
-          margin-left: 5%;
-          margin-top: 20px;
-          margin-bottom: 20px;
+          .Sub-text {
+            color: #FFF;
+            font-family: Calibri, sans-serif;
+            font-size: 18px;
+            text-align: left;
+            margin-left: 5%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
         }
-      }
+        
       }
     }
+
     .Item {
       margin-top: 15px;
       background-color: #151313;
