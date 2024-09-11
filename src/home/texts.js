@@ -31,6 +31,7 @@ const texts = {
         body: "I competed in a team of 3 at the \"UCSD HardHack\" (Hardware Hackathon) 2024, where we engineered a small wayfinding device powered by Arduino microcontroller and LCD display to direct the user home in the dark. We solved some challenging problems along the way to achieving first place in track C, outperforming 7 competitor teams",
         link: "https://docs.google.com/document/d/1S8pRMNw4NopTEcnJ9fmm_FyapqLK-i67Nd-qQjScwKQ/edit",
         github: "https://github.com/harry-lons/HardHack2024?tab=readme-ov-file",
+        imgs: [images['hh-1'],images['hh-2'],images['hh-3']]
     },
     projE: {
         title: "Project Euler",
