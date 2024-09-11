@@ -21,15 +21,22 @@ function Project(props) {
                 aria-controls="panel1-content"
                 id="panel1-header"
             >
-                {props.title}
+                <div className="project-title">
+                    {props.title}
+                </div>
             </AccordionSummary>
             <AccordionDetails>
                 {props.link && (
                     <p>
-                        Link: <a href={props.link}>{props.link}</a>
+                        Relevant Link: <a href={props.link} style={{ color: '#66b2b2' }} target="_blank"  rel="noreferrer">{props.link}</a>
                     </p>
                 )}
-                {props.text}
+                {props.github && (
+                    <p>
+                        GitHub Repo: <a href={props.github} style={{ color: '#66b2b2' }} target="_blank"  rel="noreferrer">{props.github}</a>
+                    </p>
+                )}
+                {props.body}
 
             </AccordionDetails>
         </Accordion>

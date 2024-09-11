@@ -1,6 +1,6 @@
 import React from 'react';
 import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
-
+import texts from './texts';
 import Project from './Project';
 
 function Home() {
@@ -15,10 +15,10 @@ function Home() {
                     Harry Lonsdale
                 </div>
                 <div className='Socials'>
-                    <a href='https://linkedin.com/in/harry-lonsdale/' style={{ color: "#FFF" }} target="_blank">
+                    <a href='https://linkedin.com/in/harry-lonsdale/' rel="noreferrer" style={{ color: "#FFF" }} target="_blank">
                         <LinkedinOutlined style={{ fontSize: '30px' }} />
                     </a>
-                    <a href='https://github.com/harry-lons/' style={{ color: "#FFF" }} target="_blank">
+                    <a href='https://github.com/harry-lons/' rel="noreferrer" style={{ color: "#FFF" }} target="_blank">
                         <GithubOutlined style={{ fontSize: '30px' }} />
                     </a>
                 </div>
@@ -29,7 +29,7 @@ function Home() {
                             Welcome!
                         </div>
                         <div className='Sub-text'>
-                            This is my personal website, to document projects and more. <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank">GitHub for this site</a>
+                            This is my personal website, to document projects and more. <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">GitHub for this site</a>
                         </div>
                         <div className='Sub-text'>
                             Scroll to discover!
@@ -38,18 +38,16 @@ function Home() {
                 </div>
                 <div className='Intro-projects-spacing' />
                 <div style={{width: '90%'}}>
-                <Project text=''
-                    link='https://milecalc.harrylons.com'
-                    title='MileCalc' />
-                <Project text=''
-                    link=''
-                    title='BetterGraphs' />
-                <Project text=''
-                    link=''
-                    title='UCSD HardHack 2024' />
-                <Project text='Project euler is a '
-                    link=''
-                    title='Project Euler' />
+
+                <Project {...texts.mileCalc} />
+
+                <Project {...texts.TR} />
+
+                <Project {...texts.hardHack} />
+
+                <Project {...texts.projE} />
+
+                <Project {...texts.Syn2fp} />
                 </div>
             </div>
         </div>
