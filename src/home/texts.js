@@ -1,9 +1,24 @@
+// Utility function to load all images from the projims folder
+const importAll = (requireContext) => {
+    const images = {};
+    requireContext.keys().forEach((key) => {
+        // Strip the file path and extension to create a usable key
+        const imageName = key.replace('./', '').replace(/\.[^/.]+$/, '');
+        images[imageName] = requireContext(key);
+    });
+    return images;
+};
+
+// Import all images from the projims folder
+const images = importAll(require.context('./projims', false, /\.(png|jpe?g|svg)$/));
+
 const texts = {
     mileCalc: {
         title: "MileCalc",
         body: "A personal web development project designed to automate weekly run planning.",
         link: "https://milecalc.harrylons.com",
         github: "https://github.com/harry-lons/MileCalc",
+        imgs: [images['mc-2'],images['mc-1']]
     },
     betterGraphs: {
         title: "BetterGraphs",
@@ -33,6 +48,7 @@ const texts = {
         title: "Synthesis 2 Final Project",
         body: "As a final project for my sophomore-year writing class, we wrote a proposal for a website which increases political accessibility in historically disenfranchised/disadvantaged communities. I created a demo React site to display what such a website could look like",
         github: "https://github.com/harry-lons/SYN-2-Project-3",
+        imgs: [images['syn2-1'], images['syn2-2']]
     }
 }
 

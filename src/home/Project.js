@@ -28,15 +28,28 @@ function Project(props) {
             <AccordionDetails>
                 {props.link && (
                     <p>
-                        Relevant Link: <a href={props.link} style={{ color: '#66b2b2' }} target="_blank"  rel="noreferrer">{props.link}</a>
+                        Relevant Link: <a href={props.link} style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">{props.link}</a>
                     </p>
                 )}
                 {props.github && (
                     <p>
-                        GitHub Repo: <a href={props.github} style={{ color: '#66b2b2' }} target="_blank"  rel="noreferrer">{props.github}</a>
+                        GitHub Repo: <a href={props.github} style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">{props.github}</a>
                     </p>
                 )}
                 {props.body}
+                {props.imgs && (
+                    <div>
+                        <p>Images: </p>
+                        {
+                            props.imgs.map((img, index) => (
+                                <div key={index}>
+                                    <img src={img} alt={`Image ${index}`} style={{ width: '90%', height: 'auto', maxWidth: '100%' }} />
+                                </div>
+                            ))
+                        }
+                    </div>
+                )}
+
 
             </AccordionDetails>
         </Accordion>
