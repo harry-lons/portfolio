@@ -29,10 +29,10 @@ function Home() {
                             Welcome!
                         </div>
                         <div className='Sub-text'>
-                            This is my personal website, to document projects and more. <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">GitHub for this site</a>
+                            This is my personal website, to document projects and more. Check out the <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">GitHub for this site</a>
                         </div>
                         <div className='Sub-text'>
-                            Scroll to discover!
+                            Click/tap on an item to expand details!
                         </div>
                     </div>
                 </div>
