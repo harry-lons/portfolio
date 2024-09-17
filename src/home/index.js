@@ -37,17 +37,19 @@ function Home() {
                     </div>
                 </div>
                 <div className='Intro-projects-spacing' />
-                <div style={{width: '90%'}}>
+                <div style={{ width: '90%' }}>
 
-                <Project {...texts.mileCalc} />
+                    <Project {...texts.CW} />
+                    
+                    <Project {...texts.mileCalc} />
 
-                <Project {...texts.TR} />
+                    <Project {...texts.TR} />
 
-                <Project {...texts.hardHack} />
+                    <Project {...texts.hardHack} />
 
-                <Project {...texts.projE} />
+                    <Project {...texts.projE} />
 
-                <Project {...texts.Syn2fp} />
+                    <Project {...texts.Syn2fp} />
                 </div>
             </div>
         </div>

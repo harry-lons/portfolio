@@ -18,7 +18,7 @@ const texts = {
         body: "A personal web development project designed to automate weekly run planning.",
         link: "https://milecalc.harrylons.com",
         github: "https://github.com/harry-lons/MileCalc",
-        imgs: [images['mc-2'],images['mc-1']]
+        imgs: [images['mc-2'], images['mc-1']]
     },
     betterGraphs: {
         title: "BetterGraphs",
@@ -31,7 +31,7 @@ const texts = {
         body: "I competed in a team of 3 at the \"UCSD HardHack\" (Hardware Hackathon) 2024, where we engineered a small wayfinding device powered by Arduino microcontroller and LCD display to direct the user home in the dark. We solved some challenging problems along the way to achieving first place in track C, outperforming 7 competitor teams",
         link: "https://docs.google.com/document/d/1S8pRMNw4NopTEcnJ9fmm_FyapqLK-i67Nd-qQjScwKQ/edit",
         github: "https://github.com/harry-lons/HardHack2024?tab=readme-ov-file",
-        imgs: [images['hh-1'],images['hh-2'],images['hh-3']]
+        imgs: [images['hh-1'], images['hh-2'], images['hh-3']]
     },
     projE: {
         title: "Project Euler",
@@ -50,6 +50,11 @@ const texts = {
         body: "As a final project for my sophomore-year writing class, we wrote a proposal for a website which increases political accessibility in historically disenfranchised/disadvantaged communities. I created a demo React site to display what such a website could look like",
         github: "https://github.com/harry-lons/SYN-2-Project-3",
         imgs: [images['syn2-1'], images['syn2-2']]
+    },
+    CW: {
+        title: "Internship at CurbWaste",
+        link: "https://curbwaste.com",
+        body: "As an Engineering intern at CurbWaste, I had the opportunity to experience working in industry alongside a great team of developers. The main two focuses of my time at the company were: 1) creation of internal dashboards and data collection for said dashboards, and 2) improving our E-Commerce platform for our subscribers."
     }
 }
 
