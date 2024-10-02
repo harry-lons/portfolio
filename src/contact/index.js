@@ -1,9 +1,7 @@
 import React from 'react';
 import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
-import texts from './texts';
-import Project from './Project';
 
-function Home() {
+function Contact() {
 
     return (
         <div className="Home-container">
@@ -26,37 +24,32 @@ function Home() {
                 <div className='Item-photo-container'>
                     <div className='Item'>
                         <div className='Welcome'>
-                            Welcome!
+                            Contact
                         </div>
                         <div className='Sub-text'>
-                            My name's Harry Lonsdale and I'm a third-year undergraduate student in Mathematics - Computer Science at UC San Diego. 
+                            You can contact me through any method below:
                         </div>
+                        <ul style={{textAlign:'left', marginLeft: 20, fontSize:24}}>
+                            <li style={{wordWrap:'break-word'}}>
+                                LinkedIn: <a style={{color: '#66b2b2'}} rel="noreferrer" target="_blank" href="https://linkedin.com/in/harry-lonsdale">https://linkedin.com/in/harry-lonsdale</a>
+                            </li>
+                            <li style={{wordWrap:'break-word'}}>
+                                Instagram: <a style={{color: '#66b2b2'}} rel="noreferrer" target="_blank" href="https://www.instagram.com/harry.lons/">https://www.instagram.com/harry.lons/</a>
+                            </li>
+                            <p>I do not publicly list my email address or phone number to avoid spam.</p>
+                        </ul>
                         <div className='Sub-text'>
-                            This is my personal website, to document my experiences and projects. Check out the <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">GitHub for this site</a>, or view my full contact info <a href='/contact' style={{ color: '#66b2b2' }}>here</a>.
+                            
                         </div>
-                        <div className='Sub-text'>
-                            Click/tap on an item to expand details!
-                        </div>
+                        <a style={{ color: '#66b2b2', fontSize: 24 }} href='/'>
+                            Click here to go back to home!
+                        </a>
                     </div>
                 </div>
                 <div className='Intro-projects-spacing' />
-                <div style={{ width: '90%' }}>
-
-                    <Project {...texts.CW} />
-
-                    <Project {...texts.mileCalc} />
-
-                    <Project {...texts.TR} />
-
-                    <Project {...texts.hardHack} />
-
-                    <Project {...texts.projE} />
-
-                    <Project {...texts.Syn2fp} />
-                </div>
             </div>
         </div>
     );
 }
 
-export default Home;
+export default Contact;
