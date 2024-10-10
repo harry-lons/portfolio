@@ -41,7 +41,7 @@ const texts = {
     },
     TR: {
         title: "Triton Robotics",
-        body: "I am a member of Triton Robotics, a competitive robotics team based at UCSD which competes in the annual RoboMaster North America (RMNA) challenge. In my role as an autonomy team member, I am working on the targeting and decision-making algorithms for the robots.",
+        body: "I am a member of Triton Robotics, a competitive robotics team based at UCSD which competes in the annual RoboMaster North America (RMNA) challenge. In my role on the autonomy team, I am working on the targeting and decision-making algorithms for the robots.",
         link: "https://tritonrobotics.ucsd.edu/",
         github: "https://github.com/Triton-Robotics",
     },
@@ -55,6 +55,12 @@ const texts = {
         title: "Internship at CurbWaste",
         link: "https://curbwaste.com",
         body: "As an Engineering intern at CurbWaste, I had the opportunity to experience working in industry alongside a great team of developers. The main two focuses of my time at the company were: 1) creation of internal dashboards and data collection for said dashboards, and 2) improving our E-Commerce platform for our subscribers."
+    },
+    RunSum: {
+        title: "RunSum",
+        link: "https://runsum.harrylons.com",
+        github: "https://github.com/harrylons-runsum/",
+        body: "RunSum is a site designed to provide retrospective training insights for endurance athletes. Inspired by Spotify Wrapped and similar products, RunSum allows Strava users to sign in with their Strava accounts, define a time range they're interested in, and attain some summary statistics and metrics on their workouts during that period."
     }
 }
 

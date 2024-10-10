@@ -5,6 +5,8 @@ import Project from './Project';
 
 function Home() {
 
+    // manually keep a list so I can adjust the order easily whenever I want
+    const selectedProjects = [texts.RunSum, texts.CW, texts.mileCalc, texts.TR, texts.hardHack, texts.projE, texts.Syn2fp]
     return (
         <div className="Home-container">
             <div className='Palette'>
@@ -29,7 +31,7 @@ function Home() {
                             Welcome!
                         </div>
                         <div className='Sub-text'>
-                            My name's Harry Lonsdale and I'm a third-year undergraduate student in Mathematics - Computer Science at UC San Diego. 
+                            My name's Harry Lonsdale and I'm a third-year undergraduate student in Mathematics - Computer Science at UC San Diego.
                         </div>
                         <div className='Sub-text'>
                             This is my personal website, to document my experiences and projects. Check out the <a href='https://github.com/harry-lons/portfolio' style={{ color: '#66b2b2' }} target="_blank" rel="noreferrer">GitHub for this site</a>, or view my full contact info <a href='/contact' style={{ color: '#66b2b2' }}>here</a>.
@@ -41,18 +43,9 @@ function Home() {
                 </div>
                 <div className='Intro-projects-spacing' />
                 <div style={{ width: '90%' }}>
-
-                    <Project {...texts.CW} />
-
-                    <Project {...texts.mileCalc} />
-
-                    <Project {...texts.TR} />
-
-                    <Project {...texts.hardHack} />
-
-                    <Project {...texts.projE} />
-
-                    <Project {...texts.Syn2fp} />
+                    {selectedProjects.map((oneProject, index) => (
+                        <Project key={index} {...oneProject} />
+                    ))}
                 </div>
             </div>
         </div>
