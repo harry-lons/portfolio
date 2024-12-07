@@ -6,7 +6,17 @@ import Project from './Project';
 function Home() {
 
     // manually keep a list so I can adjust the order easily whenever I want
-    const selectedProjects = [texts.RunSum, texts.CW, texts.mileCalc, texts.TR, texts.hardHack, texts.projE, texts.Syn2fp]
+    const selectedProjects = [
+        texts.LabStream,
+        texts.RunSum, 
+        texts.CSE110,
+        texts.CW, 
+        texts.mileCalc, 
+        texts.TR, 
+        texts.hardHack, 
+        texts.projE, 
+        texts.Syn2fp
+    ]
     return (
         <div className="Home-container">
             <div className='Palette'>
@@ -42,7 +52,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='Intro-projects-spacing' />
-                <div style={{ width: '90%' }}>
+                <div style={{ width: '90%', marginBottom:40 }}>
                     {selectedProjects.map((oneProject, index) => (
                         <Project key={index} {...oneProject} />
                     ))}

@@ -61,6 +61,17 @@ const texts = {
         link: "https://runsum.harrylons.com",
         github: "https://github.com/harrylons-runsum/",
         body: "RunSum is a site designed to provide retrospective training insights for endurance athletes. Inspired by Spotify Wrapped and similar products, RunSum allows Strava users to sign in with their Strava accounts, define a time range they're interested in, and attain some summary statistics and metrics on their workouts during that period."
+    },
+    CSE110: {
+        title: "CSE 110 (Software Engineering) Group Project",
+        link: "https://youtu.be/ZsWwgNoCHX8",
+        github: "https://github.com/harry-lons/socalsocial",
+        body: "In the Fall 2024 quarter, I took CSE 110, a project-based software engineering course. I led a group of 7 to complete a functional full-stack webapp within about 6 weeks. Our project was SoCalSocial, a site for clubs on college campuses to market their events on a unified platform. Above is the youtube video of the live demo to ~100 people on the last day of class. Team members: Ali Alabiad, Allen Yan, Allison Nguyen, Shengqi (Diana) Wu, George Pong, Harry Lonsdale, Vivian Wang"
+    },
+    LabStream: {
+        title: "JSOE LabStream Project",
+        github: "https://github.com/UCSD-LabStream",
+        body: "I'm collaborating with Professor Baghdadchi’s LabStream project in the ECE department to create a responsive React frontend enabling UCSD students to complete photonics lab experiments remotely. As part of a team of 7 students, we are integrating real-time control of 3D models on a web interface with lab equipment using HTTP requests to ESP32 microcontrollers, bridging digital simulations with physical lab components"
     }
 }
 
